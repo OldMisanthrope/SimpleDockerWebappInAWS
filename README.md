@@ -67,5 +67,3 @@ Once the EC2 instance is launched:
 - The **`user-data.sh`** script automates the process of setting up Docker, pulling the container image, and running it.
 - This setup is flexible and can be easily modified to run any Dockerized application by adjusting the `user-data.sh` script.
 - The use of **Auto Scaling Groups** and **Elastic Load Balancer** ensures that the application remains highly available and can handle traffic spikes.
-
-## License
