@@ -1,0 +1,119 @@
+# === Terraform ===
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfplan
+*.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+
+# Local Terraform files
+terraform.tfvars.json
+terraform.tfplan
+
+# === Ansible ===
+*.retry
+*.log
+*.pyc
+__pycache__/
+.vagrant/
+inventory.ini
+host_vars/
+group_vars/
+
+# Vault encrypted files (if using ansible-vault, rename accordingly)
+*.vault
+*.vault.yml
+*.enc.yml
+vault_password.txt
+
+# === Docker ===
+*.log
+**/Dockerfile.*
+**/.dockerignore
+docker-compose.override.yml
+.docker/
+
+# === Kubernetes ===
+*.yaml~
+*.bak
+.kube/
+.kubectl.cache/
+.kustomize/
+*.kubeconfig
+k8s-secret.yml
+
+# === Helm ===
+*.tgz
+charts/
+Chart.lock
+*.prov
+
+# === Vagrant ===
+.vagrant/
+*.box
+
+# === Packer ===
+*.box
+packer_cache/
+*.json~
+
+# === General secrets and sensitive files ===
+*.pem
+*.key
+*.crt
+*.env
+.env.*
+*.secret
+*.secrets
+*.config
+secrets.yml
+secrets.json
+
+# === Python virtualenv (for scripting, automation) ===
+venv/
+.env/
+*.pyc
+__pycache__/
+
+# === Node.js (for CI/CD dashboards etc) ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# === Logs ===
+*.log
+logs/
+*.out
+*.err
+
+# === System ===
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# === Editor/IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === CI/CD ===
+.github/workflows/*.tmp
+.githooks/
+
+# === Terraform backend if using local state ===
+terraform.tfstate.backup
+
+# === Optional custom ===
+# Uncomment below if needed
+# backup/
+# tmp/
